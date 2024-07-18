@@ -1,0 +1,844 @@
+html,
+body{
+    font-family: Lobster;
+    margin: 0;
+    background-color: #eed8b3;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a{
+    font-family: lobster;
+    text-decoration: none;
+    color: #000000;
+}
+ 
+body {
+    font-family: lobster; 
+}
+
+h1, h2, h3 {
+    font-family: lobster;
+}
+
+header {
+    display: flex;
+    min-height: 70px;
+    background-color: #FFF6E3;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+nav a{
+    font-size: 25px;
+    font-weight: 600px;
+    padding-right: 20px;
+}
+
+nav a:hover{
+    color: rgb(103, 85, 77);
+}
+
+@media (max-width: 700px) {
+
+    #carta-de-bebidas .carta {
+        text-align: center; /* Centra la imagen horizontalmente */
+    }
+    
+    #carta-de-bebidas .carta img {
+        width: 350px; /* Ajusta el ancho de la imagen al 80% del contenedor */
+        max-width: none; /* Permite que la imagen pueda superar su tamaño natural */
+        height: 380px; /* Permite que la altura se ajuste proporcionalmente al ancho */
+        display: block; /* Asegura que la imagen se muestre como bloque */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+        border: 5px solid black;
+    }
+
+    .catering .texto {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección del flex a columna para apilar verticalmente en pantallas pequeñas */
+        align-items: center; /* Alinea los elementos al centro verticalmente */
+    }
+    
+    .catering .texto img {
+        width: 100%; /* Ajusta la imagen al 100% del ancho disponible */
+        height: auto; /* Permite que la altura se ajuste proporcionalmente al ancho */
+        margin-bottom: 20px; /* Añade un margen inferior para separar la imagen del texto */
+    }
+    .catering .texto p {
+        font-size: 16px; /* Disminuye el tamaño de fuente para dispositivos móviles */
+        text-align: center; /* Centra el texto */
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+
+    .container_receta {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto_receta, .img_receta {
+        width: 100%; /* Asegura que ambos ocupen el 100% del ancho disponible */
+        max-width: 100%; /* Asegura que ambos ocupen el 100% del ancho disponible */
+        margin-bottom: 10px;
+    }
+
+    .img_receta {
+        order: 1; /* Cambia el orden para que la imagen aparezca primero */
+        display: flex; /* Asegura que el contenedor de la imagen sea un flex container */
+        justify-content: center; /* Centra horizontalmente la imagen */
+        align-items: center; /* Centra verticalmente la imagen */
+    }
+
+    .img_receta img {
+        width: 100%; /* Ajusta la anchura de la imagen al 100% del contenedor */
+        height: auto; /* Mantiene la proporción de altura */
+        max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+        display: block; /* Evita cualquier espacio adicional debajo de la imagen */
+        border: 10px solid #FFF6E3; /* Borde para la imagen */
+        box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño total */
+    }
+
+    iframe {
+        width: 100%; /* Ajusta la anchura de la imagen al 100% del contenedor */
+        height: 300; /* Mantiene la proporción de altura */
+        display: block; /* Evita cualquier espacio adicional debajo de la imagen */
+    }
+
+    .aboutus {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección del flex a columna para apilar verticalmente en pantallas pequeñas */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .aboutus img {
+        width: 100%; /* Ajusta la imagen al 100% del ancho disponible */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+    }
+
+    .texto_aboutus {
+        text-align: center; /* Alinea el texto al centro */
+        padding: 20px; /* Añade espacio interno alrededor del texto */
+    }
+
+    .texto_aboutus h2 {
+        font-size: 20px; /* Tamaño de fuente más grande para el título */
+        margin: 60px; /* Añade un margen superior e inferior */
+    }
+
+    .texto_aboutus p {
+        font-size: 16px; /* Tamaño de fuente para párrafos */
+        line-height: 1.5; /* Aumenta el interlineado para mejorar la legibilidad */
+        margin: 10px 0; /* Añade un margen superior e inferior */
+    }
+
+    .texto_historia {
+        text-align: left; /* Alineación del texto a la izquierda en dispositivos móviles */
+    }
+
+    .historia .texto_historia img {
+        margin-top: 10px; /* Reduce el margen superior en dispositivos móviles */
+        margin-bottom: 50px; /* Añade margen inferior para separación */
+    }
+    
+    #galeria-fotos {
+        height: 250px;
+    }
+
+    .slider-box ul {
+        width: 1000%; /* Ajusta el ancho para mostrar todas las imágenes en una fila */
+        animation: none; /* Detiene la animación en pantallas pequeñas */
+        margin: 0; /* Elimina el margen en la lista de imágenes */
+        padding: 0; /* Elimina el padding en la lista de imágenes */
+    }
+
+    .slider-box li {
+        width: 100%; /* Asegura que cada imagen ocupe todo el ancho */
+    }
+
+    .reservas {
+        flex-direction: column;
+    }
+
+    .detalles, .datosperso {
+        width: 100%;
+    }
+
+    .reservas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detalles, .datosperso {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .input-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .campo {
+        width: 100%;
+        margin-bottom: 10px;
+        box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+        padding: 10px; /* Añade padding para mejorar la accesibilidad en dispositivos táctiles */
+        font-size: 16px; /* Tamaño de fuente adecuado para dispositivos móviles */
+    }
+
+    textarea.campo {
+        height: 120px; /* Ajusta la altura del textarea */
+        resize: vertical; /* Permite redimensionar verticalmente */
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .terminos-label {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .boton_aceptar {
+        width: 100%;
+        max-width: 200px; /* Establece un ancho máximo para el botón */
+        padding: 10px;
+        background-color: #FFF6E3; /* Color de fondo del botón */
+        color: #f09b3b; /* Color del texto del botón */
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .boton_aceptar:hover {
+        background-color: #f09b3b; /* Cambia el color de fondo del botón al pasar el cursor */
+    }
+}
+
+.container2 {
+        display: flex;
+        align-items: center;
+        color: white;
+        justify-content: center;
+        font-size: 30px;
+    
+}
+
+.footer {
+    width: 100;
+    background-color: #FFF6E3;
+    border-top: 2px solid rgb(0, 0, 0);
+}
+
+.footer .grupo-1{
+    width: 100;
+    max-width: 1200;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50;
+    padding: 45px 0px;
+}
+
+.footer .grupo-1 .box figure{
+    width: 100;
+    height: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.footer .grupo-1 .box h2{
+    color: #000000;
+    font-family: Rowdies;
+    margin-bottom: 25;
+    font-size: 20px;
+}
+
+.footer .grupo-1 .box p{
+    color: #000000;
+    font-size: 15px;
+    font-family: Playwrite GB S;
+    margin-bottom: 10px;
+}
+
+.footer .grupo-1 .red-social a.facebook .facebook, .instagram, .tiktok{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #f09b3b;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.footer .grupo-2{
+    background-color: rgb(69, 69, 69);
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.footer .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:700px){
+    .footer .grupo-1{
+        width: 100;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+    
+}
+
+#ubicacion-horarios{
+    text-align: center;
+    background-color: #eed8b3;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+
+#ubicacion-horarios .ubicacion {
+    background-color: #FFF6E3;
+    padding: 10px; /* Añade un espacio de relleno interno */
+    max-width: 800px; /* Establece el ancho máximo */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding-bottom: 40px;
+    border: 7px solid black;
+
+}
+
+#ubicacion-horarios .ubicacion h1 {
+    font-family: Rowdies;
+    display: flex;
+    align-items: center;
+    color: #f09b3b;
+    justify-content: center;
+    font-size: 30px
+}
+
+#ubicacion-horarios .ubicacion h2 {
+    font-family: Rowdies;
+    display: flex;
+    align-items: center;
+    color: #f09b3b;
+    justify-content: center;
+    font-size: 36px
+}
+
+#ubicacion-horarios .ubicacion h3 {
+    font-family: Rowdies;
+    display: flex;
+    align-items: center;
+    color: #f09b3b;
+    justify-content: center;
+    font-size: 30px
+}
+
+#ubicacion-horarios .ubicacion p {
+    font-size: 20px;
+    font-family: Rowdies;
+}
+
+.aboutus {
+    position: relative; /* Posicionamiento relativo para que los elementos absolutos se posicionen relativos a este */
+    width: 100%; /* Ancho del contenedor al 100% del ancho disponible */
+    height: 600px; /* Altura fija del contenedor */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga del contenedor */
+    background-color: rgb(255, 255, 255); /* Fondo blanco semitransparente */
+}
+
+.aboutus img {
+    width: 100%; /* Ajusta la imagen para que llene el ancho del contenedor */
+    height: 100%; /* Altura automática para mantener la proporción de la imagen */
+    object-fit: cover; /* Escala la imagen para cubrir todo el contenedor */
+    opacity: 0.5;
+}
+
+.texto_aboutus {
+    position: absolute; /* Posicionamiento absoluto para superponer el texto sobre la imagen */
+    top: 50%; /* Alinea desde la mitad superior del contenedor */
+    left: 30%; /* Alinea desde la mitad izquierda del contenedor */
+    transform: translate(-50%, -50%); /* Centra el contenido vertical y horizontalmente */
+    text-align: left; /* Alineación del texto al centro */
+    padding: 20px; /* Espaciado interno del contenido */
+}
+
+.texto_aboutus h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    font-family: lobster;
+}
+
+.texto_aboutus p {
+    font-size: 20px; /* Tamaño de fuente para los párrafos */
+    margin-left: 80px;
+    font-family: Playwrite GB S;
+}
+
+#sobre-nosotros {
+    background-color: white;
+}
+
+.misionyvision {
+    display: flex;  /* Utilizamos flexbox para alinear elementos */
+    padding: 20px;  /* Espacio interno para mejor legibilidad */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    background-color: #eed8b3;
+}
+
+.mision, .vision {
+    flex: 1;  /* Ambos divs ocuparán el mismo espacio */
+    padding: 20px;  /* Espacio interno para mejor legibilidad */
+    box-sizing: border-box;  /* Incluimos padding dentro del ancho total */
+}
+
+.mision {
+    background-color: #FFF6E3;  /* Color de fondo opcional para mision */
+    margin-right: 10px;  /* Margen derecho entre mision y vision */
+    text-align: center;
+}
+
+.mision h1 {
+    font-family: Rowdies;
+    display: flex;
+    align-items: center;
+    color: #f09b3b;
+    justify-content: center;
+    font-size: 30px
+}
+
+.mision p {
+    line-height: 1; /* Espaciado entre líneas */
+    text-align: justify; /* Justificar texto */
+    text-align: center;
+    font-size: 18px; /* Tamaño de fuente para los párrafos */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 10px; /* Espacio inferior entre párrafos */
+    font-family: Playwrite GB S;
+
+}
+
+
+.vision {
+    background-color: #FFF6E3;  /* Color de fondo opcional para vision */
+    margin-left: 10px;  /* Margen izquierdo entre mision y vision */
+    text-align: center;
+}
+
+.vision h1 {
+    font-family: Rowdies;
+    display: flex;
+    align-items: center;
+    color: #f09b3b;
+    justify-content: center;
+    font-size: 30px
+}
+
+.vision p {
+    line-height: 1; /* Espaciado entre líneas */
+    text-align: justify; /* Justificar texto */
+    text-align: center;
+    font-size: 18px; /* Tamaño de fuente para los párrafos */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 10px; /* Espacio inferior entre párrafos */
+    font-family: Playwrite GB S;
+}
+
+.historia {
+    background-color: #eed8b3;
+    padding: 20px;  /* Espacio interno para mejor legibilidad */
+}
+
+.texto_historia {
+    background-color: #FFF6E3;
+    padding: 15px;
+    text-align: right;
+    text-align: justify; /* Justifica el texto */
+}
+
+.texto_historia h1 {
+    font-family: Rowdies;
+    display: flex;
+    color: #f09b3b;
+    justify-content: center;
+    font-size: 35px;
+    text-align: left;
+}
+
+.texto_historia p {
+    font-family: Playwrite GB S;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    text-align: center;
+    text-align: justify; /* Justifica el texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 10px; /* Espacio inferior entre párrafos */
+}
+
+.historia .texto_historia img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; /* Ajusta el margen superior para espacio */
+    margin-left: auto;
+    margin-right: auto; /* Centra la imagen horizontalmente */
+    margin-bottom: 50px; /* Añade margen inferior para separación */
+}
+
+#servicios h2 {
+    font-family: Rowdies;
+    display: flex;
+    align-items: center;
+    color: #f09b3b;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#servicios {
+    align-items: center;
+    background-color: #eed8b3;
+    padding: 20px;
+    padding-bottom: 40px; /* Ajusta el espacio hacia abajo según sea necesario */
+}
+
+
+
+#servicios .reservas {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF6E3;
+    padding: 10px; /* Ajusta el padding para que el fondo de .reservas sea más pequeño */
+    margin: 0 10px; /* Añade un margen para separar .reservas del borde del contenedor #servicios */
+}
+
+.detalles, .datosperso {
+    width: 48%; /* Ajusta el ancho según tu diseño */
+}
+
+.datosperso textarea {
+    width: 100%; /* O ajusta el ancho según tu diseño */
+    height: 150px; /* Ajusta la altura según sea necesario */
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.reservas .detalles h1 {
+    font-family: Rowdies;
+    display: flex;
+    color: #f09b3b;
+    font-size: 30px
+}
+
+.datosperso .terminos-label {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.datosperso .terminos-label input[type="checkbox"] {
+    margin-right: 10px; /* Ajusta el espacio entre el checkbox y el texto */
+}
+
+.flex-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reservas .datosperso h1 {
+    font-family: Rowdies;
+    display: flex;
+    color: #f09b3b;
+    font-size: 30px
+}
+
+.reservas .campo {
+    color: #f09b3b; /* Cambia el color del texto dentro de los inputs a azul */
+    font-family: Rowdies;
+    font-size: 20px
+}
+
+.terminos-label {
+    color: #f09b3b; /* Cambia el color del texto */
+    font-size: 16px; /* Ajusta el tamaño de fuente según sea necesario */
+    font-family: Rowdies;
+}
+
+.boton_aceptar {
+    background-color: #f49529; /* Cambia el color de fondo del botón enviar */
+    color: white; /* Cambia el color del texto del botón a blanco */
+    border: none; /* Elimina el borde del botón */
+    padding: 10px 20px; /* Ajusta el padding dentro del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Ajusta el tamaño de fuente del botón */
+    border-radius: 5px; /* Añade bordes redondeados al botón */
+    font-family: Rowdies;
+}
+
+.boton_aceptar:hover {
+    background-color: #f49529; /* Cambia el color de fondo del botón enviar al pasar el cursor */
+    font-family: Rowdies;
+}
+
+.catering {
+    display: flex;  /* Seguimos usando flexbox para los elementos internos */
+    flex-wrap: wrap;  /* Permitimos que los elementos se ajusten en varios renglones si es necesario */
+    margin-left: 20px;  /* Añadimos un margen a la izquierda para separar del borde */
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.catering .texto {
+    display: flex; /* Utiliza flexbox para manejar la disposición */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.catering .texto img {
+    width: 100%; /* Ajusta el ancho de la imagen según sea necesario */
+    max-width: 300px; /* Establece un ancho máximo para la imagen */
+    margin-right: 20px; /* Añade un margen derecho para separar la imagen del texto */
+    border: 7px solid black;
+}
+
+.catering .texto p {
+    flex: 1; /* El texto ocupará todo el espacio restante disponible */
+    font-size: 20px;
+    font-family: Rowdies;
+}
+
+.reservas {
+    margin: 0; /* Quitamos el margen para asegurar que el fondo se vea completo */
+    padding: 20px; /* Ajustamos el padding para espacio interno */
+    font-family: Playwrite GB S;
+    font-size: 15px;
+    background-color: #f09b3b;
+    box-sizing: border-box; /* Aseguramos que el padding no afecte el tamaño total */
+}
+
+
+#galeria {
+    padding: 20px; /* Espacio interior alrededor de la sección */
+    text-align: center; /* Centra el contenido dentro de la sección */
+    background-color: #eed8b3;
+}
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.inicio img {
+    width: 100%; /* Ancho del 98% del contenedor padre */
+    max-height: auto; /* Altura máxima de 700px */
+    margin: 10px auto; /* Margen 10px arriba y abajo, centrado horizontalmente */
+    display: block; /* Asegura que las imágenes se comporten como bloques */
+}
+
+#carta-de-bebidas {
+    text-align: center;
+    padding: 30px;
+    background-color: #eed8b3;
+}
+
+#carta-de-bebidas h2 {
+    font-family: Rowdies;
+    display: flex;
+    align-items: center;
+    color: #f09b3b;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.carta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carta img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid black;
+}
+
+#galeria-fotos {
+    padding: 20px;
+}
+
+
+.slider-box {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    margin: 15px auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 200%;
+    animation: slide 10s infinite ease-in-out;
+}
+
+.slider-box li {
+    width: 50%; /* Cada imagen ocupa la mitad del contenedor */
+    list-style: none;
+    position: relative;
+    border: 7px solid black;
+}
+
+.slider-box img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0%, 30% { margin-left: 0; }
+    50%, 80% { margin-left: -100%; }
+    100% { margin-left: 0; }
+}
+
+/* Media Queries para responsividad */
+
+@media (max-width: 768px) {
+    .slider-box ul {
+        width: 200%;
+        animation: slide 10s infinite ease-in-out;
+    }
+
+    .slider-box li {
+        width: 100%; /* Cada imagen ocupa todo el ancho del contenedor en móviles */
+    }
+
+    @keyframes slide {
+        0%, 30% { margin-left: 0; }
+        50%, 80% { margin-left: -100%; }
+        100% { margin-left: 0; }
+    }
+}
+
+#recetas p {
+    font-family: Playwrite GB S;
+}
+
+
+.img_receta img {
+    width: 600px;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    border: 7px solid black;
+}
+
+.texto_receta {
+    flex: 1;
+    margin-right: 20px;
+    margin: 6px 0;
+    width: 80%;
+    text-align: justify;
+    font-family: Playwrite GB S;
+    
+}
+
+.container_receta {
+    display: flex;
+    align-items:flex-start;
+    margin: 0; /* Quitamos el margen para asegurar que el fondo se vea completo */
+    padding: 20px; /* Ajustamos el padding para espacio interno */
+    font-family: Playwrite GB S;
+    font-size: 15px;
+    background-color: #eed8b3;
+    box-sizing: border-box; /* Aseguramos que el padding no afecte el tamaño total */
+}
+
+#galeria-fotos {
+    background-color: #eed8b3;
+}
+
+#galeria-fotos h3 {
+    font-family: Rowdies;
+    display: flex;
+    align-items: center;
+    color: #f09b3b;
+    justify-content: center;
+    font-size: 30px
+}
+
+#recetas {
+    background-color: #eed8b3;
+    padding-top: 10px;
+}
+
+#recetas h4 {
+    font-family: Rowdies;
+    display: flex;
+    align-items: center;
+    color: #f09b3b;
+    justify-content: center;
+    font-size: 30px
+}
+
+
+.galeria_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container img{
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    margin: 30px;
+    flex: 1;
+}
